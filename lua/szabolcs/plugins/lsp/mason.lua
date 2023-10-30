@@ -24,11 +24,11 @@ return {
         mason_lspconfig.setup({
             -- list of servers for mason to install
             ensure_installed = {
-                "lua_ls",
-                "tsserver",
-                "html",
-                "cssls",
-                "texlab"
+                "lua_ls", -- lua 
+                "tsserver", -- typescript
+                "html", -- html 
+                "cssls", -- css 
+                "texlab", -- latex
             },
             -- auto-install configured servers (with lspconfig)
             automatic_installation = true, -- not the same as ensure_installed
