@@ -94,6 +94,10 @@ return {
     })
 
 
+    lspconfig["pyright"].setup({
+      capabilities = capabilities,
+      on_attach = on_attach,
+    })
     -- configure tailwindcss server
     -- configure lua server (with special settings)
     lspconfig["lua_ls"].setup({
