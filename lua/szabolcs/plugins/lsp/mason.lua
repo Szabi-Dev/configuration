@@ -29,7 +29,8 @@ return {
                 "html", -- html 
                 "cssls", -- css 
                 "texlab", -- latex
-                "bashls"
+                "bashls", -- bash 
+                "pyright" -- python
             },
             -- auto-install configured servers (with lspconfig)
             automatic_installation = true, -- not the same as ensure_installed
