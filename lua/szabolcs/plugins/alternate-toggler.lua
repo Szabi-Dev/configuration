@@ -1,5 +1,6 @@
 return {
     "rmagatti/alternate-toggler",
+    event = { "BufReadPre", "BufNewFile" },
     config = function ()
         local alternate = require("alternate-toggler");
         alternate.setup({
