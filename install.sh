@@ -2,18 +2,14 @@
 
 sudo apt update 
 
-# tmux + create a link for the config
-sudo apt install tmux -y
-ln  .tmux.conf ~/.tmux.conf
+# git
+sudo apt install git -y
 
 # curl
 sudo apt install curl -y
 
 #wget
 sudo apt install wget -y
-
-# git
-sudo apt install git -y
 
 # htop for system monitor
 sudo apt install htop -y
@@ -27,3 +23,8 @@ sudo apt install make -y
 # ripgrep for fuzzy finder nvim
 sudo apt install ripgrep -y
 
+
+# tmux + create a link for the config
+sudo apt install tmux -y
+ln  .tmux.conf ~/.tmux.conf
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
