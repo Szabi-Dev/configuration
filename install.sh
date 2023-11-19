@@ -26,5 +26,4 @@ sudo apt install ripgrep -y
 
 # tmux + create a link for the config
 sudo apt install tmux -y
-ln  .tmux.conf ~/.tmux.conf
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
