@@ -5,8 +5,14 @@ refresh_tmux() {
     rsync -P .tmux.conf ~/
 }
 
+# refresh nvim configuration file
+refresh_nvim() {
+    mkdir -p ~/.config/nvim/
+    rsync -Pr nvim/  ~/.config/nvim/
+}
 refresh_all() {
     refresh_tmux
+    refresh_nvim
 }
 
 
@@ -21,7 +27,9 @@ case $1 in
     tmux)
         refresh_tmux
         ;;
-
+    nvim)
+        refresh_nvim
+        ;;
     *)
         echo  "Unknown parameter"
         ;;
