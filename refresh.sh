@@ -2,7 +2,7 @@
 
 # refresh tmux configuration file
 refresh_tmux() {
-    rsync -P .tmux.conf ~/
+    rsync -P tmux/.tmux.conf ~/
 }
 
 # refresh nvim configuration file
