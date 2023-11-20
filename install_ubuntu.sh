@@ -27,5 +27,15 @@ sudo apt install ripgrep -y
 sudo apt install tmux -y
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 
-# zsh and dependencies 
-sudo apt install zsh zsh-autosuggestions zsh-syntax-highlighting autojump
+# autojump for smart navigating
+sudo apt install autojump -y
+
+# zsh   
+sudo apt install zsh -y 
+mkdir -p ~/.config/zsh
+
+# zsh powerlevel theme
+git clone --depth=1 https://gitee.com/romkatv/powerlevel10k.git ~/.config/zsh/powerlevel10k
+
+#zsh autosuggestion
+git clone https://github.com/zsh-users/zsh-autosuggestions ~/.config/zsh/zsh-autosuggestions
