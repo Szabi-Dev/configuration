@@ -42,3 +42,6 @@ git clone https://github.com/zsh-users/zsh-autosuggestions ~/.config/zsh/zsh-aut
 
 # zsh syntax highlight
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.config/zsh/zsh-syntax-highlighting
+
+# set zsh as default
+chsh -s $(which zsh)
