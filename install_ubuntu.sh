@@ -23,7 +23,9 @@ sudo apt install make -y
 # ripgrep for fuzzy finder nvim
 sudo apt install ripgrep -y
 
-
 # tmux + tmux plugin manager 
 sudo apt install tmux -y
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+
+# zsh and dependencies 
+sudo apt install zsh zsh-autosuggestions zsh-syntax-highlighting autojump
