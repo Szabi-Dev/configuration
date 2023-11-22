@@ -23,6 +23,9 @@ sudo apt install make -y
 # ripgrep for fuzzy finder nvim
 sudo apt install ripgrep -y
 
+# terminal emulator kitty
+sudo apt install kitty
+
 # tmux + tmux plugin manager 
 sudo apt install tmux -y
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm

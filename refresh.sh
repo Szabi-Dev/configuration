@@ -17,10 +17,17 @@ refresh_nvim() {
     rsync -Pr nvim/  ~/.config/nvim/
 }
 
+# refresh kitty config file 
+refresh_kitty() {
+    mkdir -p ~/.config/kitty/
+    rsync -Pr kitty/kitty.conf  ~/.config/kitty/
+}
+
 refresh_all() {
     refresh_tmux
     refresh_nvim
     refresh_zsh
+    refresh_kitty
 }
 
 
@@ -40,6 +47,9 @@ case $1 in
         ;;
     zsh)
         refresh_zsh
+        ;;
+    kitty)
+        refresh_kitty
         ;;
     *)
         echo  "Unknown parameter"
