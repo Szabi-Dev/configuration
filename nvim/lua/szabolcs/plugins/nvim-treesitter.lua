@@ -24,22 +24,7 @@ return {
         },
         -- ensure these language parsers are installed
         ensure_installed = {
-          "json",
-          "javascript",
-          "typescript",
-          "tsx",
-          "yaml",
-          "html",
-          "css",
-          "markdown",
-          "markdown_inline",
-          "bash",
-          "lua",
-          "vim",
-          "dockerfile",
-          "gitignore",
-          "query",
-          "python",
+          "java",
         },
         incremental_selection = {
           enable = true,

@@ -1,5 +1,8 @@
 return {
 	"mfussenegger/nvim-jdtls",
+    dependencies = {
+        "hrsh7th/cmp-nvim-lsp",
+    },
 	ft = { "java" },
 	config = function()
 		jdtls = require("jdtls")
@@ -13,6 +16,8 @@ return {
 
 		jdtls_path = mason_registry.get_package("jdtls"):get_install_path()
 
+        local capabilities = vim.lsp.protocol.make_client_capabilities()
+        capabilities = require('cmp_nvim_lsp').default_capabilities(capabilities)
 		config = {
 			cmd = {
 				java_cmd,
@@ -42,6 +47,8 @@ return {
 			--root_dir = require("jdtls.setup").find_root({"build.gradle", "pom.xml", ".git"}),
 			-- Using .project file (Eclipse workspace) as reference for setting root dir
 			root_dir = jdtls.setup.find_root({ ".project", "pom.xml", ".git" }),
+
+            capabilities = capabilities, 
 
 			on_init = function(client)
 				if client.config.settings then
