@@ -13,4 +13,5 @@ vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
     {import = "szabolcs.plugins"},
+    {import = "szabolcs.lsp"},
 })
