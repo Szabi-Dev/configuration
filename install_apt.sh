@@ -17,6 +17,9 @@ sudo apt install htop -y
 # gcc 
 sudo apt install gcc -y
 
+# openvpn 
+sudo apt install openvpn
+
 # make 
 sudo apt install make -y
 
