@@ -34,7 +34,8 @@ sudo apt install kitty -y
 
 # tmux + tmux plugin manager 
 sudo apt install tmux -y
-git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+mkdir -p ~/.config/tmux
+git clone https://github.com/tmux-plugins/tpm ~/.config/tmux/tpm
 
 # autojump for smart navigating
 sudo apt install autojump -y
