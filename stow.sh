@@ -7,14 +7,15 @@ refresh_tmux() {
 
 # refresh tmux configuration file
 refresh_zsh() {
-    rsync -P zsh/.zshrc ~/
-    rsync -P zsh/aliasrc ~/.config/zsh/
+    stow -t ~/ -R zsh/.zshrc
+    mkdir -p ~/.config/zsh
+    stow -t  ~/.config/zsh/ -R zsh/aliasrc
 }
 
 # refresh nvim configuration file
 refresh_nvim() {
     mkdir -p ~/.config/nvim/
-    rsync -Pr nvim/  ~/.config/nvim/
+    stow -t  ~/.config/nvim/ nvim 
 }
 
 # refresh kitty config file 
