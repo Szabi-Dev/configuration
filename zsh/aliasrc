@@ -27,3 +27,4 @@ extract ()
 
 alias ls='ls --color'
 alias ll='ls -alh --color'
+alias tmux='tmux -f ~/.config/tmux/tmux.conf'

@@ -2,14 +2,14 @@
 
 # refresh tmux configuration file
 refresh_tmux() {
-    rsync -P tmux/.tmux.conf ~/
+    mkdir -p ~/.config/tmux
+    stow -t ~/.config/tmux  -R tmux
 }
 
 # refresh tmux configuration file
 refresh_zsh() {
-    stow -t ~/ -R zsh/.zshrc
-    mkdir -p ~/.config/zsh
-    stow -t  ~/.config/zsh/ -R zsh/aliasrc
+    rsync -P zsh/.zshrc ~/
+    rsync -P zsh/aliasrc ~/.config/zsh/
 }
 
 # refresh nvim configuration file
