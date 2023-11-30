@@ -23,11 +23,14 @@ sudo apt install openvpn
 # make 
 sudo apt install make -y
 
+# stow to create symlinks
+sudo apt install stow -y
+
 # ripgrep for fuzzy finder nvim
 sudo apt install ripgrep -y
 
 # terminal emulator kitty
-sudo apt install kitty
+sudo apt install kitty -y
 
 # tmux + tmux plugin manager 
 sudo apt install tmux -y
@@ -52,6 +55,3 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.config/zsh
 # set zsh as default
 chsh -s $(which zsh)
 
-# sdk manager for managing different java versions
-curl -s "https://get.sdkman.io" | bash
-source "$HOME/.sdkman/bin/sdkman-init.sh"
