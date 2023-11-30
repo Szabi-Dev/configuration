@@ -8,8 +8,8 @@ refresh_tmux() {
 
 # refresh tmux configuration file
 refresh_zsh() {
-    rsync -P zsh/.zshrc ~/
-    rsync -P zsh/aliasrc ~/.config/zsh/
+    ln zsh/.zshrc ~/.zshrc
+    ln zsh/aliasrc ~/.config/zsh/aliasrc
 }
 
 # refresh nvim configuration file
