@@ -20,7 +20,7 @@ refresh_nvim() {
 # refresh kitty config file 
 refresh_kitty() {
     mkdir -p ~/.config/kitty/
-    rsync -Pr kitty/kitty.conf  ~/.config/kitty/
+    stow -t ~/.config/kitty/ -R kitty
 }
 
 refresh_all() {
