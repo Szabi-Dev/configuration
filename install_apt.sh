@@ -26,6 +26,9 @@ sudo apt install gpg -y
 # make 
 sudo apt install make -y
 
+# bat for showing files nicely
+sudo apt install bat -y
+
 # stow to create symlinks
 sudo apt install stow -y
 
