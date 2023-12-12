@@ -29,6 +29,9 @@ sudo apt install make -y
 # bat for showing files nicely
 sudo apt install bat -y
 
+# xclip to access clipboard from terminal 
+sudo apt install xclip -y
+
 # stow to create symlinks
 sudo apt install stow -y
 
