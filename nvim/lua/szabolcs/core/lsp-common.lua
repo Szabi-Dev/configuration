@@ -1,5 +1,5 @@
 LSP = {}
-function LSP.on_attach(_, bufnr) 
+function LSP.on_attach(_, bufnr)
     local keymap = vim.keymap -- for conciseness
     local opts = { noremap = true, silent = true }
 

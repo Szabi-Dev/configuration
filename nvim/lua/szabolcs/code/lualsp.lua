@@ -15,6 +15,7 @@ return {
 
     local lsp_common = require("szabolcs.core.lsp-common")
     lsp_common.set_signs()
+
     lspconfig["lua_ls"].setup({
       capabilities = capabilities,
       on_attach = lsp_common.on_attach,
