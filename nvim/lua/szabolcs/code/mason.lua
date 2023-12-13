@@ -10,7 +10,12 @@ return {
                 -- java
                 "jdtls",
                 -- lua 
-                "lua_ls"
+                "lua_ls",
+                -- angular
+                "html",
+                "cssls",
+                "tsserver",
+                "angularls"
             },
             automatic_installation = true,
         })

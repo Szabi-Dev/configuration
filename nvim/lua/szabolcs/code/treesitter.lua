@@ -19,7 +19,11 @@ return {
 
                 ensure_installed = {
                     "java",
-                    "lua"
+                    "lua",
+                    "typescript",
+                    "html",
+                    "css",
+                    "scss",
                 },
                 incremental_selection = {
                     enable = true,
