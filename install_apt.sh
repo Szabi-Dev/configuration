@@ -41,6 +41,12 @@ sudo apt install ripgrep -y
 # terminal emulator kitty
 sudo apt install kitty -y
 
+# btop for performance monitoring
+sudo apt install btop -y
+
+# lsd for nicer ls
+sudo atp install lsd
+
 # tmux + tmux plugin manager 
 sudo apt install tmux -y
 mkdir -p ~/.config/tmux
