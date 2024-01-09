@@ -1,9 +1,25 @@
-# java 
+# java
+JDK_HOME=$HOME/.jdk/
+
 alias java-ls='ls ~/.jdk'
 
 java-use () 
 {
     export JAVA_HOME="/home/szabolcs/.jdk/$1/"
+}
+
+java-install-tar () 
+{
+    mkdir -p $JDK_HOME
+    if [ -d $JDK_HOME/$1 ]; then
+        echo "The specified version already exists"
+        exit 1
+    fi
+    mkdir -p $JDK_HOME/$1
+    cd $HOME/Downloads/
+    wget -O $1.tar.gz $2
+    tar -xzvf $1.tar.gz -C $JDK_HOME/$1 --strip-components 1
+    rm $1.tar.gz
 }
 
 # spring
