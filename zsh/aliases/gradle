@@ -1,0 +1,29 @@
+# java 
+alias java-ls='ls ~/.jdk'
+
+java-use () 
+{
+    export JAVA_HOME="/home/szabolcs/.jdk/$1/"
+}
+
+# spring
+spring-profile () 
+{
+    export spring_profiles_active=$1
+}
+
+
+# gradle
+gradle-debug () 
+{
+    java-use "$1"
+    spring-profile "$2"
+    ./gradlew bootRun --debug-jvm -x test
+}
+
+gradle-run () 
+{
+    java-use "$1"
+    spring-profile "$2"
+    ./gradlew bootRun -x test
+}

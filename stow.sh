@@ -9,7 +9,10 @@ refresh_tmux() {
 # refresh tmux configuration file
 refresh_zsh() {
     ln zsh/.zshrc ~/.zshrc
-    ln zsh/aliasrc ~/.config/zsh/aliasrc
+    mkdir -p ~/.config/zsh/aliases/
+    cd zsh/ 
+    stow -t ~/.config/zsh/aliases/ -R aliases
+    cd ..
 }
 
 # refresh nvim configuration file

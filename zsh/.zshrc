@@ -29,7 +29,11 @@ _comp_options+=(globdots)               # Include hidden files.
 bindkey '^ ' autosuggest-accept
 
 # Load aliases and shortcuts if existent.
-[ -f "$HOME/.config/zsh/aliasrc" ] && source "$HOME/.config/zsh/aliasrc"
+# [ -f "$HOME/.config/zsh/aliasrc" ] && source "$HOME/.config/zsh/aliasrc"
+ZSH_ALIAS_HOME=$HOME/.config/zsh/aliases/
+if [ -d "$ZSH_ALIAS_HOME" ]; then 
+    for FILE in $ZSH_ALIAS_HOME/* ; do source $FILE ; done
+fi
 
 # Load ; should be last.
 source /usr/share/autojump/autojump.zsh 2>/dev/null

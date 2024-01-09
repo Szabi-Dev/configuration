@@ -25,21 +25,10 @@ extract ()
   fi
 }
 
-# gradle 
-gradleRun () 
-{
-    export JAVA_HOME="/home/szabolcs/.jdk/$1/"
-    export spring_profiles_active=szabolcs
-    ./gradlew bootRun -x test
-}
-
 # ls
 alias ls='ls --color'
 alias ll='ls -alh --color'
 
 # tmux
 alias tmux='tmux -f ~/.config/tmux/tmux.conf'
-
-# java
-alias java-ls='ls ~/.jdk'
 
