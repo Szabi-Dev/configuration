@@ -1,0 +1,11 @@
+npm-start () 
+{
+    nvm use
+    npm start
+}
+
+npm-install ()
+{
+    nvm use
+    npm install
+}

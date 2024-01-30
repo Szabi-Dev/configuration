@@ -30,16 +30,27 @@ spring-profile ()
 
 
 # gradle
-gradle-debug () 
+gradle-set-env () 
 {
     java-use "$1"
     spring-profile "$2"
+}
+
+
+gradle-debug () 
+{
+    gradle-set-env "$1" "$2"
     ./gradlew bootRun --debug-jvm -x test
 }
 
 gradle-run () 
 {
-    java-use "$1"
-    spring-profile "$2"
+    gradle-set-env "$1" "$2"
     ./gradlew bootRun -x test
+}
+
+gradle-test ()
+{
+    gradle-set-env "$1" "$2"
+    ./gradlew test 
 }
