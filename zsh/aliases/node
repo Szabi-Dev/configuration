@@ -9,3 +9,14 @@ npm-install ()
     nvm use
     npm install
 }
+
+npm-test ()
+{
+    nvm use
+    npm test -- "$@"
+}
+
+npm-test-headless ()
+{
+    npm-test --no-watch --no-progress --browsers=ChromeHeadless
+}
