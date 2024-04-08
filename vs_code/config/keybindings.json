@@ -35,10 +35,6 @@
   },
 
   {
-    "command": "-workbench.action.files.save",
-    "key": "ctrl+s"
-  },
-  {
     "command": "saveAll",
     "key": "ctrl+shift+s"
   }

@@ -28,6 +28,12 @@
         "editor.defaultFormatter": "esbenp.prettier-vscode"
       },
 
+    //project manager
+      "projectManager.git.baseFolders": [
+        "$home/Code"
+      ],
+      "projectManager.sortList": "Recent",
+
       // vim
       "vim.foldfix": true,
       "vim.highlightedyank.enable": true,

@@ -16,6 +16,8 @@ sudo apt install code
 pkglist=(
     # general
     TabNine.tabnine-vscode
+    alefragnani.project-manager
+    usernamehw.errorlens
     # angular
     esbenp.prettier-vscode
     Angular.ng-template
