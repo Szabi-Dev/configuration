@@ -52,5 +52,5 @@ gradle-run ()
 gradle-test ()
 {
     gradle-set-env "$1" "$2"
-    ./gradlew test 
+    ./gradlew test -- "$@"
 }
