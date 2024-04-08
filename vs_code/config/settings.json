@@ -1,0 +1,37 @@
+{
+
+    "git.autofetch": true,
+ 
+    "tabnine.experimentalAutoImports": true,
+
+    "workbench.colorTheme": "Everforest Dark",
+    "workbench.startupEditor": "none",
+
+    "editor.minimap.enabled": false,
+    "editor.smoothScrolling": true,
+    "editor.suggest.insertMode": "replace",
+    "editor.inlineSuggest.enabled": true,
+    "editor.lineNumbers": "relative",
+    "editor.linkedEditing": true,
+
+    //formatting 
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+      },
+      "[markdown]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+      },
+      "[typescript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+      },
+      "[typescriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+      },
+
+      // vim
+      "vim.foldfix": true,
+      "vim.highlightedyank.enable": true,
+      "vim.hlsearch": true,
+      "vim.leader": "<space>",
+      "vim.useSystemClipboard": true,
+}
