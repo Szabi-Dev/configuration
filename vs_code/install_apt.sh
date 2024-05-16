@@ -25,6 +25,9 @@ pkglist=(
     sainnhe.everforest
     # vim
     vscodevim.vim
+    # python
+    ms-python.vscode-pylance
+    ms-python.black-formatter
 )
 
 for i in ${pkglist[@]}; do
